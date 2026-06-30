@@ -1,1 +1,19 @@
+region.AX = {
+  mode: "forward",
+  accepts: ["RAW", "SENSE", "CALC"],
+  signals: ["ERROR", "HELP", "GHOST"],
+  uce: "forward"
+};
+region.IS = {
+  mode: "state",
+  accepts: ["RAW", "SENSE", "CALC"],
+  signals: ["ERROR", "HELP", "GHOST"],
+  uce: "state"
+};
+region.XA = {
+  mode: "return",
+  accepts: ["SENSE", "CALC"],
+  signals: ["GHOST", "ERROR"],
+  uce: "return"
+};
 
